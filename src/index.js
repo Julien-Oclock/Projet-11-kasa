@@ -12,10 +12,9 @@ import NotFound from './Pages/NotFound';
 import About from './Pages/About';
 
 const router = createBrowserRouter([
-  { path: '/', element: <Home /> },
+  { path: '/', element: <Home />, errorElement: <NotFound /> },
   { path: '/place', element: <Place /> },
   { path: '/about', element: <About /> },
-  { path: '/notfound', element: <NotFound /> },
 
 ])
 
