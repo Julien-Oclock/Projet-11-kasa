@@ -2,7 +2,7 @@ import React from "react";
 
 import Logo from "../../assets/logo.svg";
 
-import "./style.scss";
+import "./styles.scss";
 
 
 const Header = () => {
