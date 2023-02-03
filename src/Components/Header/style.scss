@@ -1,0 +1,39 @@
+@import '../../styles/shared.scss';
+
+.header{
+    display : flex;
+    justify-content: space-between;
+    margin : $height-gutter $width-gutter;
+    // Nav container
+    &__nav{
+        display: flex;
+        width: 20vw;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    // Nav item
+    &__nav-item{
+        list-style: none; 
+    }
+    // Nav link
+    &__nav-link{
+        text-decoration: none;
+        color : $base-color;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 142.6%;
+
+        &--active{
+            text-decoration: underline;
+            color : $base-color;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 142.6%;
+    
+        }
+    } 
+
+}

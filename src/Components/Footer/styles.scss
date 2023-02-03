@@ -1,0 +1,39 @@
+@import '../../styles/shared.scss';
+
+.footer {
+    position: absolute;
+    height: 209px;
+    background: #000000;
+    width: 100%;
+    bottom: 0;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
+    &__container-logo{
+        padding-top: 80px;
+        img{
+            margin: 0 auto;
+        }
+    }
+    &__content-item{
+        display: block;
+        color : $basic-white;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 142.6%;
+
+        /* or 34px */
+
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
