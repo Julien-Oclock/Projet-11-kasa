@@ -5,16 +5,29 @@ import {
   RouterProvider 
 } from 'react-router-dom';
 
-import './index.css';
+import './index.scss';
 import Home from './Pages/Home';
 import Place from './Pages/Place';
 import NotFound from './Pages/NotFound';
 import About from './Pages/About';
 
 const router = createBrowserRouter([
-  { path: '/', element: <Home />, errorElement: <NotFound /> },
-  { path: '/place', element: <Place /> },
-  { path: '/about', element: <About /> },
+  { 
+    // home page path
+    path: '/', 
+    element: <Home />, 
+    errorElement: <NotFound /> 
+  },
+  { 
+    // place page path
+    path: '/place', 
+    element: <Place /> 
+  },
+  { 
+    // about page path
+    path: '/about',
+    element: <About /> 
+  },
 
 ])
 
