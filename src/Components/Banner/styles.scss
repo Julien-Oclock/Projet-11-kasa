@@ -1,0 +1,25 @@
+@import '../../styles/shared.scss';
+
+
+.banner{
+    margin : 100px $width-gutter;
+    text-align: center;
+    height: 223px;
+    background : linear-gradient(rgba(26, 25, 25, 0.459), rgba(26, 26, 26, 0.425)), url('../../assets/images/homeBanner.jpg');
+    background-size: cover;
+    color: white;
+    border-radius: 25px;
+    background-size : 100% 100%;
+
+    
+    &__content{
+        padding-top: 68px;
+        font-size: 48px;
+        line-height: 68.45px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+
+    }
+}
