@@ -1,11 +1,9 @@
 @import '../../styles/shared.scss';
 
 .footer {
-    position: absolute;
     height: 209px;
     background: #000000;
     width: 100%;
-    bottom: 0;
 
     &__container{
         display: flex;

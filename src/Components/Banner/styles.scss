@@ -5,7 +5,7 @@
     margin : 100px $width-gutter;
     text-align: center;
     height: 223px;
-    background : linear-gradient(rgba(26, 25, 25, 0.459), rgba(26, 26, 26, 0.425)), url('../../assets/images/homeBanner.jpg');
+    background : linear-gradient(rgba(61, 61, 61, 0.3), rgba(61, 61, 61, 0.3)), url('../../assets/images/homeBanner.jpg');
     background-size: cover;
     color: white;
     border-radius: 25px;
@@ -16,10 +16,9 @@
         padding-top: 68px;
         font-size: 48px;
         line-height: 68.45px;
-        font-weight: 400;
+        font-weight: 500;
         text-align: center;
         letter-spacing: 0.05em;
         color: #FFFFFF;
-
     }
 }
