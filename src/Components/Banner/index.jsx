@@ -1,24 +1,20 @@
-import React from "react";
-import PropTypes from 'prop-types';
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import PropTypes from 'prop-types'
 
+import './styles.scss'
 
-import "./styles.scss";
-
-
-const Banner = ( {content} ) => {
+const Banner = ({ content }) => {
     return (
         <div className="banner">
             <h1 className="banner__content">{content}</h1>
         </div>
-    );
-};
+    )
+}
 
-
-
-export default Banner;
-
+export default Banner
 
 // Props
 Banner.propTypes = {
-    content: PropTypes.string.isRequired,
-};
+    content: PropTypes.string.isRequired
+}

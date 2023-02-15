@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React from 'react';
 
 const About = () => {
@@ -5,7 +6,7 @@ const About = () => {
         <div>
             <h1>About</h1>
         </div>
-    );
+    )
 }
 
-export default About;
+export default About

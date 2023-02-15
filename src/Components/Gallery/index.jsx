@@ -1,18 +1,21 @@
+// eslint-disable-next-line
 import React from "react";
 
-import Card from "../Card";
+import PropTypes from 'prop-types'
+// Voir avec mentor pour Card
+// eslint-disable-next-line no-unused-vars
+import Card from '../Card'
 
-import './styles.scss';
+import './styles.scss'
 
-const Gallery = () => {
+const Gallery = ({ data }) => {
     return <div className="card-container">
-        <Card key="1"  title ='titre de la location'/>
-        <Card key="2" title ='titre de la location'/>
-        <Card key="3"  title ='titre de la location'/>
-        <Card key="4"  title ='titre de la location'/>
-        <Card key="5"  title ='titre de la location'/>
-        <Card key="6"  title ='titre de la location'/>
-    </div>;
+        {data.map((item, index) => <Card key={index} item={item} />)}
+    </div>
 }
 
-export default Gallery;
+export default Gallery
+
+Gallery.propTypes = {
+    data: PropTypes.array.isRequired
+}

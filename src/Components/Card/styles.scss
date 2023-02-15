@@ -1,8 +1,8 @@
 
 
 .card{ 
-    background:  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-color: rgb(255, 86, 86);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;    
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
@@ -10,6 +10,9 @@
     &__title{
         color: white;
         margin : 20px;
-        width: 100px;
+        width: 150px;
+        text-shadow: 1px 1px 1px rgb(54, 54, 54), 0 0 1em rgb(54, 54, 54), 0 0 0.2em rgb(54, 54, 54);
     }
+
+
 }

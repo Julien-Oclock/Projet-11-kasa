@@ -1,19 +1,27 @@
-import React from "react";
-import PropTypes from 'prop-types';
+// eslint-disable-next-line
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import './styles.scss';
+import './styles.scss'
 
-// eslint-disable-next-line react/prop-types
-const Card = ({ title }) => {
+const Card = ({ item }) => {
+    const { title } = item
     return (
-        <div className="card">
+        <div
+            onClick={() => { console.log('click') }}
+            className="card"
+            style={{ backgroundImage: `url(${item.cover})` }}
+        >
             <h3 className="card__title">{title}</h3>
         </div>
-    );
+    )
 }
 
-export default Card;
+export default Card
 
 Card.prototype = {
-    title: PropTypes.string.isRequired,
-};
+    item: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired
+    }).isRequired
+}

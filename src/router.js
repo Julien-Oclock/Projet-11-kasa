@@ -11,19 +11,25 @@ import About from './Pages/About';
 const router = createBrowserRouter([
     { 
       // home page path
-      path: '/', 
-      element: <Home />, 
-      errorElement: <NotFound /> 
+        path: '/', 
+        element: <Home />, 
+        errorElement: <NotFound /> 
     },
     { 
-      // place page path
-      path: '/place', 
-      element: <Place /> 
+        // home page path
+        path: '/home', 
+        element: <Home />, 
+        errorElement: <NotFound /> 
     },
     { 
-      // about page path
-      path: '/about',
-      element: <About /> 
+        // place page path
+        path: '/place', 
+        element: <Place /> 
+    },
+    { 
+        // about page path
+        path: '/about',
+        element: <About /> 
     },
   
   ])
