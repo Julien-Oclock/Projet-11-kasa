@@ -7,6 +7,7 @@ import Banner from '../../Components/Banner'
 import Gallery from '../../Components/Gallery'
 
 import data from '../../Data/db.json'
+import banner from '../../assets/images/bannerImg.png'
 
 const Home = () => {
     const message = 'Chez vous, partout et ailleurs'
@@ -14,7 +15,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <Banner content={message} />
+            <Banner content={message} cover={banner} />
             <Gallery data={data}/>
             <Footer />
         </div>

@@ -5,11 +5,12 @@
     margin : 100px $width-gutter;
     text-align: center;
     height: 223px;
-    background : linear-gradient(rgba(61, 61, 61, 0.3), rgba(61, 61, 61, 0.3)), url('../../assets/images/homeBanner.jpg');
-    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
     color: white;
     border-radius: 25px;
-    background-size : 100% 100%;
+    background-size: cover;
+    background-position: center center;
+    //background-attachment: fixed;
 
     
     &__content{

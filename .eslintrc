@@ -15,7 +15,7 @@
       "sourceType": "module"
   },
   "rules": {
-    "indent" : ["error", 4],
+    "indent" : "off",
     "no-unused-vars" : "off"
 
   }
