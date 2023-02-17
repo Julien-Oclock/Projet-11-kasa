@@ -10,7 +10,7 @@ import './styles.scss'
 
 const Gallery = ({ data }) => {
     return <div className="card-container">
-        {data.map((item, index) => <Card key={index} item={item} />)}
+        {data.map((item) => <Card key={item.id} item={item} />)}
     </div>
 }
 
