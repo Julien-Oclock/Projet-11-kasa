@@ -13,7 +13,7 @@ const Dropdown = ({ item }) => {
     return (
         <div className="dropdown">
             <div onClick={toggleDropdown} className="dropdown__header">{title}</div>
-            {isOpen && <div className="dropdown__content">{content}</div>}
+            {isOpen && <div className="dropdown__content">{ typeof (content) === typeof ([]) ? content.map((item, index) => <div key={index}>{item}</div>) : content}</div>}
         </div>
     )
 }

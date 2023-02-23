@@ -1,7 +1,7 @@
 @import '../../styles/shared.scss';
 
 .dropdown{
-    width: 80%;
+    min-width: 580px;
     margin: 0 auto;
     margin-bottom: 50px;
     background-color: $grey-background;
@@ -20,7 +20,11 @@
         height: fit-content;
         padding: 1.5rem;
         color: $base-color;
-        font-size: 24px;
-
+        max-width: 580px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.6%;
     }
 }

@@ -18,7 +18,7 @@ const About = () => {
             <Header />
             <Banner content='' cover={banner}/>
             <div className="about">
-                {data.map((item) => <Dropdown key={item.id} item={item} />)}
+                {data.map((item) => <Dropdown key={item.id} item={item}/>)}
             </div>
             <Footer />
         </div>
