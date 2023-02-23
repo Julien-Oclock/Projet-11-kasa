@@ -1,0 +1,12 @@
+@import '../../styles/shared.scss';
+
+
+.tag{
+    display: inline-block;
+    background-color: $base-color;
+    color : white;
+    padding : 10px 3px;
+    border-radius: 11px;
+    font-weight: 400;
+    padding: 3px 10px ;
+}
