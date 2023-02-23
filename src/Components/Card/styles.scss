@@ -1,6 +1,10 @@
-
+a{
+    display: block !important;
+    text-decoration: none;
+}
 
 .card{ 
+    height: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;    
     border-radius: 10px;

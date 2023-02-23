@@ -1,19 +1,23 @@
 // eslint-disable-next-line
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
+
+import Place from '../../Pages/Place'
 
 import './styles.scss'
 
 const Card = ({ item }) => {
     const { title, id, cover } = item
     return (
-        <div
-            onClick={() => { console.log(id) }}
-            className="card"
-            style={{ backgroundImage: `url(${cover})` }}
-        >
-            <h3 className="card__title">{title}</h3>
-        </div>
+        <Link to={`/place/${item.id}`}>
+            <div
+                className="card"
+                style={{ backgroundImage: `url(${cover})` }}
+            >
+                <h3 className="card__title">{title}</h3>
+            </div>
+        </Link>
     )
 }
 

@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     },
     {
         // place page path
-        path: '/place',
+        path: '/place/:id',
         element: <Place />
     },
     {
