@@ -4,6 +4,7 @@
     display : flex;
     justify-content: space-between;
     margin : $height-gutter $width-gutter;
+    margin-bottom: 0;
     // Nav container
     &__nav{
         display: flex;

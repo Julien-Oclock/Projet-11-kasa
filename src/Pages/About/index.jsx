@@ -14,7 +14,7 @@ import Footer from '../../Components/Footer'
 
 const About = () => {
     return (
-        <div>
+        <div className='wrapper'>
             <Header />
             <Banner content='' cover={banner}/>
             <div className="about">

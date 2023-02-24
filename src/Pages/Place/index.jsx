@@ -8,12 +8,14 @@ import Footer from '../../Components/Footer'
 import Carousel from '../../Components/Carousel'
 import TagContainer from '../../Components/TagContainer'
 import Dropdown from '../../Components/Dropdown'
+import StarContainer from '../../Components/StarContainer'
 
 import './styles.scss'
 
 const Place = () => {
     const idParam = useParams().id
     const currentPlace = Data.filter((place) => place.id === idParam)[0]
+    console.log(currentPlace)
     const dropdownData = [
         {
             title: 'Description',
@@ -42,10 +44,12 @@ const Place = () => {
                     </div>
                 </div>
             </div>
-            <TagContainer Tags={currentPlace.tags} />
+            <div className="rate-wrapper">
+                <TagContainer Tags={currentPlace.tags} />
+                <StarContainer rate={currentPlace.rating} />
+            </div>
             <div className='dropdown-wrapper'>
                 {dropdownData.map((item, index) => {
-                    console.log(item)
                     return (
                         <div key={index}>
                             <Dropdown className='dropdown-place' key={index} item={item}/>

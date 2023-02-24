@@ -64,7 +64,9 @@
     display: flex;
     justify-content: space-between;
 }
-.dropdown-place{
-    // need to do somme css to handle extra wild screen
+.rate-wrapper{
+    margin: 0 $width-gutter;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
 }
-
