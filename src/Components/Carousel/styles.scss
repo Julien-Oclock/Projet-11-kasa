@@ -4,10 +4,11 @@
     position: relative;
     margin : $height-gutter $width-gutter ;
     height: 520px;
-    background-size: 100% 100%;
-    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     border-radius: 25px;
+    background-color: $star-grey;
 
     &__counter{
         position: absolute;

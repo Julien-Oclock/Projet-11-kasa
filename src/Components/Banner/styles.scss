@@ -10,6 +10,12 @@
     border-radius: 25px;
     background-size: cover;
     background-position: center center;
+
+    @media screen and (max-Width : (544px) ) {
+        height: 117px;
+        margin : 20px $width-gutter;
+        
+    }
     //background-attachment: fixed;
 
     
@@ -21,5 +27,14 @@
         text-align: center;
         letter-spacing: 0.05em;
         color: #FFFFFF;
+
+        @media screen and (max-Width : (544px) ) {
+            font-size: 24px;
+            text-align: left;
+            width: 300px;
+            line-height: 100%;
+            padding: 30px;
+        }
     }
+
 }

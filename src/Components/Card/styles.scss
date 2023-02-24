@@ -11,6 +11,11 @@ a{
     display: flex;
     align-items: flex-end;
 
+    @media screen and (max-Width : (544px) ) {
+        background-size: cover;
+        background-position: center;
+    }
+
     &__title{
         color: white;
         margin : 20px;
