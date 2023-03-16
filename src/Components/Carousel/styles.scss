@@ -5,10 +5,12 @@
     margin : $height-gutter $width-gutter ;
     height: 520px;
     background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 25px;
     background-color: $star-grey;
+
+
 
     &__counter{
         position: absolute;
@@ -26,10 +28,5 @@
     justify-content: space-between;
     align-items: center;
 
-    &__arrow_left, &__arrow_right{
-        font-size: 52px;
-        color : white;
-        font-weight: bold;
-    }
 }
 

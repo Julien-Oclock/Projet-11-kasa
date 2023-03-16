@@ -2,9 +2,15 @@
 
 .dropdown{
     min-width: 42vw;
+    max-width: 42vw;
     margin: 0 auto;
     margin-bottom: 50px;
     background-color: $grey-background;
+
+    @media only screen and (max-width : 568px){
+        min-width: 100%;
+        max-width: 100vw;
+    }
 
     // @media only screen and (max-width : 1814px) {
     //         min-width: 550px;

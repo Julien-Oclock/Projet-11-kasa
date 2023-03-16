@@ -7,14 +7,14 @@ import './styles.scss'
 
 const Header = () => {
     return (
-        <header className="header">
-            <img className="header__logo" src={Logo} alt="Logo" />
-            <ul className="header__nav">
-                <li className="header__nav-item">
-                    <a className="header__nav-link" href="/">Acceuil</a>
+        <header className="header-page">
+            <img className="header-page__logo" src={Logo} alt="Logo" />
+            <ul className="header-page__nav">
+                <li className="header-page__nav-item">
+                    <a className="header-page__nav-link" href="/">Acceuil</a>
                 </li>
-                <li className="header__nav-item">
-                    <a className="header__nav-link" href="/about"> A Propos</a>
+                <li className="header-page__nav-item">
+                    <a className="header-page__nav-link" href="/about"> A Propos</a>
                 </li>
             </ul>
         </header>

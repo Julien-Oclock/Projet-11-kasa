@@ -22,12 +22,18 @@ const router = createBrowserRouter([
     {
         // place page path
         path: '/place/:id',
-        element: <Place />
+        element: <Place />,
+        errorElement: <NotFound />
     },
     {
         // about page path
         path: '/about',
         element: <About />
+    },
+    {
+        // about page path
+        path: '/4o4',
+        element: <NotFound />
     }
 ])
 
