@@ -17,7 +17,8 @@
   "rules": {
     "indent" : "off",
     "no-unused-vars" : "off",
-    "no-multiple-empty-lines":"off"
+    "no-multiple-empty-lines":"off",
+    "operator-linebreak":"off"
 
   }
 }
