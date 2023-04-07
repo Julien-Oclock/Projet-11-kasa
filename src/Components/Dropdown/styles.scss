@@ -19,7 +19,7 @@
     //     @media only screen and (max-width : 1314px) {
     //         min-width: 500px;
     //     }
-
+    
 
     &__header{
         background-color: $base-color;
@@ -29,7 +29,16 @@
         font-family: $font;
         font-weight: 400;
         font-size: 24px;
+        display: flex;
+        justify-content: space-between;
     }
+
+    // rotate icon 180deg
+    .rotate{
+        transform: rotate(180deg);
+        transition-duration: 0.4s;
+    }
+
     &__content{
         height: fit-content;
         padding: 1.5rem;
