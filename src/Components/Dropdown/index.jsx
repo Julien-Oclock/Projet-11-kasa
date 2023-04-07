@@ -11,7 +11,7 @@ const Dropdown = ({ item }) => {
         setIsOpen(!isOpen)
     }
     return (
-        <div className="dropdown">
+        <div className="dropdown large">
             <div onClick={toggleDropdown} className="dropdown__header">{title}</div>
             {isOpen && <div className="dropdown__content">{ typeof (content) === typeof ([]) ? content.map((item, index) => <div key={index}>{item}</div>) : content}</div>}
         </div>
