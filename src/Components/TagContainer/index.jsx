@@ -15,8 +15,12 @@ const TagContainer = ({ Tags }) => {
     )
   }
 
-TagContainer.propTypes = {
-    Tags: PropTypes.array.isRequired
-  }
-
 export default TagContainer
+
+TagContainer.propTypes = {
+  Tags: PropTypes.array.isRequired
+}
+
+TagContainer.defaultProps = {
+  Tags: []
+}

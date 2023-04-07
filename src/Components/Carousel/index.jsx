@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+
 
 import './styles.scss'
 
@@ -44,3 +46,12 @@ const Carousel = ({ Images }) => {
 }
 
 export default Carousel
+
+Carousel.prototype = {
+    Images: PropTypes.arrayOf(PropTypes.string).isRequired
+}
+
+Carousel.defaultProps = {
+    Images: []
+}
+

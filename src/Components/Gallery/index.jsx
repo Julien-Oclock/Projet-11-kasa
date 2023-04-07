@@ -19,3 +19,7 @@ export default Gallery
 Gallery.propTypes = {
     data: PropTypes.array.isRequired
 }
+
+Gallery.defaultProps = {
+    data: []
+}

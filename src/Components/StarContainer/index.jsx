@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 
 import './styles.scss'
 
@@ -25,3 +27,11 @@ const StarContainer = ({ rate }) => {
 }
 
 export default StarContainer
+
+StarContainer.propTypes = {
+    rate: PropTypes.number.isRequired
+}
+
+StarContainer.defaultProps = {
+    rate: 0
+}

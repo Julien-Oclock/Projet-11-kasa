@@ -10,8 +10,14 @@ const Tag = ({ item }) => {
     )
 }
 
+export default Tag
+
 Tag.prototype = {
     item: PropTypes.string.isRequired
 }
 
-export default Tag
+Tag.defaultProps = {
+    item: ''
+}
+
+
