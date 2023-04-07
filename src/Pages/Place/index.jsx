@@ -13,8 +13,11 @@ import StarContainer from '../../Components/StarContainer'
 import './styles.scss'
 
 const Place = () => {
+    // get the id from the url
     const idParam = useParams().id
+    // find the current place in the data filtered by the id
     const currentPlace = Data.filter((place) => place.id === idParam)[0]
+    // data Object for the dropdown
     const dropdownData = [
         {
             title: 'Description',
@@ -25,6 +28,7 @@ const Place = () => {
             content: currentPlace.equipments
         }
     ]
+    // if the place doesn't exist, redirect to the 404 page
     if (!currentPlace) redirect('/NotFound')
     else {
         return (

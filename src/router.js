@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         errorElement: <NotFound />
     },
     {
-        // home page path
+        // home page path secondary link
         path: '/home',
         element: <Home />,
         errorElement: <NotFound />
