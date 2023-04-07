@@ -3,12 +3,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-import Place from '../../Pages/Place'
-
 import './styles.scss'
 
 const Card = ({ item }) => {
-    const { title, id, cover } = item
+    const { title, cover } = item
     return (
         <Link to={`/place/${item.id}`}>
             <div
